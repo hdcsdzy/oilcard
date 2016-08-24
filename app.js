@@ -4,13 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var orm = require('orm');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-var test = '测试';
-var test2 = '测试2';
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -35,6 +34,26 @@ app.use(function(req, res, next) {
 });
 
 // error handlers
+
+app.use(orm.express("mysql://hdcsd:8dle2Hd7@182.92.198.113/chexiaoxiao", {
+  define: function (db, models, next) {
+    models.dingdan = db.define("oilcard", {
+      userPhone : Number,
+      orderid   : Number,
+      game_userid: Number,
+      userid: Number,
+      deviceid: Number,
+      chargeType: Number,
+      order_failed_reason: String,
+      consumeMileages: Number,
+      counts: Number,
+      status: Number,
+      createtime: String,
+      couponid: Number
+    });
+    next();
+  }
+}));
 
 // development error handler
 // will print stacktrace
