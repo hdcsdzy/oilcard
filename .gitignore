@@ -1,6 +1,7 @@
 
 .idea/workspace.xml
 
+<<<<<<< HEAD
 .idea/modules.xml
 
 .idea/libraries/oilcard_node_modules.xml
@@ -10,3 +11,22 @@
 .idea/jsLibraryMappings.xml
 
 .idea/encodings.xml
+=======
+*.iml
+
+*.xml
+
+*.xml
+
+*.xml
+
+*.xml
+
+.idea/jsLibraryMappings.xml
+
+.idea/libraries/oilcard_node_modules.xml
+
+.idea/modules.xml
+
+.idea/oilcard.iml
+>>>>>>> origin/master
