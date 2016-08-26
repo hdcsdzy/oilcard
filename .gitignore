@@ -1,10 +1,45 @@
 
+<<<<<<< HEAD
+=======
+.idea/workspace.xml
+
+
+.idea/modules.xml
+
+.idea/libraries/oilcard_node_modules.xml
+
+.idea/oilcard.iml
+
+.idea/jsLibraryMappings.xml
+
+.idea/encodings.xml
+
+
+*.iml
+
+*.xml
+
+*.xml
+
+>>>>>>> master
 *.xml
 
 *.xml
 
+<<<<<<< HEAD
 .idea/vcs.xml
 
 .idea/oilcard.iml
+=======
+.idea/jsLibraryMappings.xml
+
+.idea/libraries/oilcard_node_modules.xml
+
+.idea/modules.xml
+
+.idea/oilcard.iml
+
+
+>>>>>>> master
 
 .idea/vcs.xml
